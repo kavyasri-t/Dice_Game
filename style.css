@@ -1,0 +1,95 @@
+body {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+main {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 100vh;
+  width: 700px;
+
+  margin: 0 auto;
+  align-items: center;
+}
+.player1,
+.player2 {
+  display: flex;
+  flex-direction: column;
+
+  width: 350px;
+  height: 400px;
+  padding-top: 10px;
+  background-color: #f3f3f3;
+  opacity: 0.5;
+  text-align: center;
+}
+.active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.player1 div,
+.player2 div {
+  height: 70px;
+  width: 120px;
+  background-color: #333;
+  opacity: 0.8;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  margin-top: 132px;
+}
+
+.btn--new {
+  position: absolute;
+  width: 110px;
+  top: 68px;
+  height: 40px;
+  left: 280px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #f3f3f3;
+  opacity: 1;
+  font-weight: 700;
+  border: 2px #fff;
+}
+.btn--roll {
+  position: absolute;
+  width: 100px;
+  top: 345px;
+  height: 40px;
+  left: 290px;
+  border-radius: 15px;
+  border: none;
+  background-color: #333;
+  opacity: 0.6;
+  color: white;
+}
+.btn--hold {
+  position: absolute;
+  width: 80px;
+  top: 400px;
+  height: 40px;
+  left: 299px;
+  border-radius: 15px;
+  border: none;
+  background-color: #333;
+  opacity: 0.6;
+  color: white;
+}
+
+img {
+  position: absolute;
+  width: 100px;
+  top: 160px;
+  height: 100px;
+  left: 300px;
+}
+.btn:focus {
+  outline: 0;
+}
+.winner {
+  background-color: #5f8575;
+}
