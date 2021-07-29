@@ -38,7 +38,7 @@ document.querySelector(".btn--hold").addEventListener("click", function () {
   let cscore = document.querySelector(`.${currentPlayer} .score`).textContent;
   cscore = Number(cscore) + current;
   document.querySelector(`.${currentPlayer} .score`).textContent = cscore;
-  if (cscore >= 20) {
+  if (cscore >= 50) {
     document.querySelector(`.${currentPlayer}`).classList.add("winner");
     document.querySelector(".btn--roll").disabled = true;
     document.querySelector(".btn--hold").disabled = true;
